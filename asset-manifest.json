@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/would-you-like/static/js/main.6a1df258.js",
+    "static/media/avatar.jpg": "/would-you-like/static/media/avatar.1d769473ec091815674f.jpg",
+    "index.html": "/would-you-like/index.html",
+    "main.6a1df258.js.map": "/would-you-like/static/js/main.6a1df258.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6a1df258.js"
+  ]
+}

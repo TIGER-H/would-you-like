@@ -16,7 +16,7 @@ const Scale = ({ children }) => {
       velocity: 0,
       mass: 1,
     },
-    delay: 150,
+    delay: 100,
   });
   return <animated.div style={props}>{children}</animated.div>;
 };

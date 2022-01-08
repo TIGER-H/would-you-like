@@ -9,25 +9,42 @@ const Particle = ({ distance, angle, children }) => {
   const endX = 1 * distance * Math.cos(angleInRadians);
   const endY = 1 * distance * Math.sin(angleInRadians);
 
-  const props = useSpring({
+  const positionProp = useSpring({
     to: {
       transform: `translate(${endX}px, ${endY}px) scale(0)`,
-      opacity: 1,
     },
     from: {
       transform: `translate(${startX}px, ${startY}px) scale(1)`,
-      opacity: 0,
     },
 
     config: {
       tension: 200,
-      friction: 14,
+      friction: 60,
     },
 
     delay: 300,
   });
 
-  return <animated.div style={props}>{children}</animated.div>;
+  const opacityProp = useSpring({
+    to: {
+      opacity: 1,
+    },
+    from: {
+      opacity: 0,
+    },
+    config: {
+      tension: 200,
+      friction: 60,
+    },
+
+    delay: 300,
+  });
+
+  return (
+    <animated.div style={{ ...positionProp, ...opacityProp }}>
+      {children}
+    </animated.div>
+  );
 };
 
 export default Particle;

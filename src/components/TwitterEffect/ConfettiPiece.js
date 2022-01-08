@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Particle from "./Particle";
 
-const size = 5;
+const size = 4;
 const ConfettiPiece = ({ angle, distance, color }) => {
   return (
     <CenterWrapper>

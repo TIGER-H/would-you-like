@@ -5,7 +5,6 @@ const Circle = ({ size, color }) => {
 };
 
 // popping circle from size 0 to full size
-
 const scale = keyframes`
   from {
     transform: translate(-50%, -50%) scale(0);
@@ -27,14 +26,25 @@ const fade = keyframes`
   }
 `;
 
+const bcChange = keyframes`
+  15% {
+    border-width: 12px;
+  }
+  100% {
+    border-width: 0;
+  }
+`;
+
 const Wrapper = styled.div`
   position: absolute;
   transform: translate(-50%, -50%);
   width: ${(props) => props.size}px;
   aspect-ratio: 1;
-  background-color: ${(props) => props.color};
   border-radius: 50%;
-  animation: ${scale} 300ms forwards, ${fade} 500ms forwards;
+  border: 12px solid ${(props) => props.color};
+  background-color: white;
+  animation: ${scale} 300ms forwards, ${fade} 500ms forwards,
+    ${bcChange} 300ms forwards;
 `;
 
 export default Circle;

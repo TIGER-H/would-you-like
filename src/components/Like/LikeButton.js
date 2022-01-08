@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Circle from "../TwitterEffect/Circle";
 import ConfettiPiece from "../TwitterEffect/ConfettiPiece";
 import Scale from "../TwitterEffect/Scale";

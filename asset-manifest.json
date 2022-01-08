@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/would-you-like/static/js/main.6a1df258.js",
+    "main.js": "/would-you-like/static/js/main.63a7ee2b.js",
     "static/media/avatar.jpg": "/would-you-like/static/media/avatar.1d769473ec091815674f.jpg",
     "index.html": "/would-you-like/index.html",
-    "main.6a1df258.js.map": "/would-you-like/static/js/main.6a1df258.js.map"
+    "main.63a7ee2b.js.map": "/would-you-like/static/js/main.63a7ee2b.js.map"
   },
   "entrypoints": [
-    "static/js/main.6a1df258.js"
+    "static/js/main.63a7ee2b.js"
   ]
 }
